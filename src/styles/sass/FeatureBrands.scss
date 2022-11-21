@@ -3,6 +3,7 @@
 @import "../../styles/partials/mixins";
 
 .featured-brands {
+  margin: 30px;
   @include flexBox(center, center);
 
   .logo {
