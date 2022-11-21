@@ -1,0 +1,184 @@
+#root,
+html,
+body,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: "Circular", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p,
+li {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: #0052cc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 80px;
+  height: 40px;
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #5e6c84;
+}
+
+.frame img {
+  padding: 30px 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 468px) {
+  .hero,
+.human-resource > .boxes,
+.admin-logistics > .box-layout,
+.finance > .box-layout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero,
+.human-resource,
+.admin-logistics,
+.finance,
+.footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .featured-brands > .logo,
+.footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.nav {
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  z-index: 99;
+}
+.nav .hamburger-icon {
+  display: none;
+}
+.nav .logo-wrapper {
+  display: flex;
+}
+.nav .nav-links {
+  display: flex;
+}
+.nav .nav-links li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 15px;
+}
+.nav .nav-links a {
+  color: #091e42;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+.nav .nav-links a:hover {
+  color: #0052cc;
+}
+.nav .user-auth {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 180px;
+}
+.nav .user-auth #nav-btn {
+  background-color: #0052cc;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 10px;
+  margin-left: 20px;
+  transition: 0.1s ease-in-out;
+}
+.nav .user-auth #nav-btn:visited {
+  background-color: #091e42;
+}
+.nav .user-auth #nav-btn:hover {
+  background-color: #091e42;
+}
+
+@media (max-width: 468px) {
+  .nav {
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  .nav .logo-wrapper {
+    margin-left: 30px;
+  }
+  .nav .hamburger-icon {
+    display: block;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  .nav .nav-links {
+    display: none;
+  }
+  .nav .nav-links li {
+    padding-bottom: 40px;
+  }
+  .nav .nav-links .mobile-nav {
+    background-color: #fff;
+    top: 60px;
+    padding: 0;
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav .nav-links .hidden {
+    overflow-y: hidden;
+  }
+}

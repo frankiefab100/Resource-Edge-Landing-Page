@@ -1,0 +1,23 @@
+@import "../../styles/partials/global";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.featured-brands {
+  @include flexBox(center, center);
+
+  .logo {
+    @include flexBox(center, center);
+
+    img {
+      padding-right: 50px;
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .featured-brands .logo img {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+}

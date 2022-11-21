@@ -1,0 +1,33 @@
+@import "./variables";
+
+@mixin buttonStyle {
+  border: none;
+  background-color: $blue;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $white;
+  margin-right: 80px;
+  height: 40px;
+  width: 200px;
+}
+
+@mixin flexBox($justify: center, $align: center, $flex-direction: row) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin boxGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+}
+
+// @mixin boxGrid($gtc: repeat(3, 1fr)) {
+//   display: grid;
+//   grid-template-columns: $gtc;
+//   grid-gap: 20px;
+//   width: 100%;
+// }

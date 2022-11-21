@@ -1,0 +1,37 @@
+@import "../../styles/partials/global";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.admin-logistics {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 60px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .box-layout {
+    align-items: center;
+    padding-top: 20px;
+    @include boxGrid;
+
+    .box {
+      padding: 20px;
+
+      .icon {
+        border-radius: 50%;
+        padding: 8px;
+        text-align: center;
+        width: 40px;
+
+        &.icon1 {
+          background-color: $circle-4;
+        }
+        &.icon2 {
+          background-color: $circle-5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.hero {
+  background-color: $bg-primary;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 80px 60px 40px;
+
+  .hero-left p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .hero-right img {
+    padding-left: 10px;
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .hero .hero-right img {
+    padding-left: 0;
+    width: 100%;
+  }
+}

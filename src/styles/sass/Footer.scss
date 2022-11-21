@@ -1,0 +1,41 @@
+@import "../../styles/partials/global";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.footer {
+  background-color: $dark-blue;
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  padding: 30px 50px;
+
+  &-left,
+  &-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-right ul {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      padding-left: 5px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .footer {
+    text-align: center;
+
+    &-right ul {
+      justify-content: center;
+      padding-left: 20px;
+    }
+  }
+}
