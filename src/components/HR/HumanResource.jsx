@@ -4,7 +4,7 @@ import Goal from "/icons/goal.png";
 import Calendar from "/icons/calendar.png";
 import EmployeeDirectory from "/images/Employee-directory.png";
 import EmployeeDirectoryMobile from "/images/mobile-Employee.png";
-import "../../styles/sass/css/HumanResource.css";
+import "../../styles/css/HumanResource.css";
 
 const HumanResource = () => {
   return (

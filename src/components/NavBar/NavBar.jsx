@@ -3,7 +3,7 @@ import Hamburger from "/icons/Hamburger-menu.svg";
 import Close from "/icons/Close icon.svg";
 import Logo from "/logo/Logo-coloured.png";
 import LogoMobile from "/logo/Logo-mobile.png";
-import "../../styles/sass/css/NavBar.css";
+import "../../styles/css/NavBar.css";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -31,7 +31,7 @@ const NavBar = () => {
         )}
       </div>
 
-      <ul className={`${showMenu ? "nav-links mobile-nav" : "nav-links"}`}>
+      <ul className={`${showMenu ? "mobile-nav" : "nav-links"}`}>
         <li onClick={handleMenu}>
           <a href="features">Features</a>
         </li>

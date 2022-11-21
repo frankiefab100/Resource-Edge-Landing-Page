@@ -3,7 +3,7 @@ import UNNLogo from "/logo/UNN-logo.png";
 import TeneceLogo from "/logo/Tenece-logo.png";
 import PrivateEstateLogo from "/logo/Private-estate-logo.png";
 import GenesysLogo from "/logo/Genesys-logo.png";
-import "../../styles/sass/css/FeatureBrands.css";
+import "../../styles/css/FeatureBrands.css";
 
 const FeatureBrands = () => {
   return (

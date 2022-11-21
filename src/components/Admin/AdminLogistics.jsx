@@ -3,7 +3,7 @@ import Sent from "/icons/sent 1.png";
 import Briefcase from "/icons/briefcase.png";
 import DirectReports from "/images/Travel-Direct-Reports.png";
 import DirectReportsMobile from "/images/mobile-Travel.png";
-import "../../styles/sass/css/AdminLogistics.css";
+import "../../styles/css/AdminLogistics.css";
 
 const AdminLogistics = () => {
   return (

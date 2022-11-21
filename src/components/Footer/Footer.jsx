@@ -4,7 +4,7 @@ import Facebook from "/icons/facebook.png";
 import Twitter from "/icons/twitter.png";
 import Linkedin from "/icons/linkedin.png";
 import Instagram from "/icons/instagram.png";
-import "../../styles/sass/css/Footer.css";
+import "../../styles/css/Footer.css";
 
 const Footer = () => {
   return (

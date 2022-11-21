@@ -3,7 +3,7 @@ import Tasklist from "/icons/task list.png";
 import Pay from "/icons/pay.png";
 import Payroll from "/images/Payroll.jpg";
 import PayrollMobile from "/images/mobile-Payroll.jpg";
-import "../../styles/sass/css/Finance.css";
+import "../../styles/css/Finance.css";
 
 const Finance = () => {
   return (
