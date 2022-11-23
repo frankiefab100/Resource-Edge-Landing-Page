@@ -74,7 +74,7 @@ button {
   width: 100%;
 }
 
-@media screen and (max-width: 468px) {
+@media (max-width: 480px) and (max-width: 768px) {
   .hero,
   .human-resource > .boxes,
   .admin-logistics > .box-layout,
@@ -82,7 +82,9 @@ button {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+}
 
+@media screen and (max-width: 480px) {
   .hero,
   .human-resource,
   .admin-logistics,
@@ -96,5 +98,23 @@ button {
   .footer {
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav .nav-links {
+    margin-left: -20px;
+    li {
+      padding: 0 5px;
+    }
+  }
+
+  .user-auth {
+    right: 160px;
+  }
+
+  .featured-brands .logo img {
+    padding-right: 20px;
+    width: 100px;
   }
 }

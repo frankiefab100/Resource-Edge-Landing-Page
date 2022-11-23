@@ -42,12 +42,12 @@ const Finance = () => {
       <div className="frame">
         <picture>
           <source
-            media="(max-width: 469px)"
+            media="(max-width: 480px)"
             srcSet={PayrollMobile}
             alt="payroll image"
           />
           <source
-            media="(min-width: 470px)"
+            media="(min-width: 481px)"
             srcSet={Payroll}
             alt="payroll image"
           />

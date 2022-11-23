@@ -55,12 +55,12 @@ const HumanResource = () => {
       <div className="frame">
         <picture>
           <source
-            media="(max-width: 469px)"
+            media="(max-width: 480px)"
             srcSet={EmployeeDirectoryMobile}
             alt="Employee directory"
           />
           <source
-            media="(min-width: 470px)"
+            media="(min-width: 481px)"
             srcSet={EmployeeDirectory}
             alt="Employee directory"
           />

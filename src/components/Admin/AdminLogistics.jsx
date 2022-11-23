@@ -42,12 +42,12 @@ const AdminLogistics = () => {
       <div className="frame">
         <picture>
           <source
-            media="(max-width: 469px)"
+            media="(max-width: 480px)"
             srcSet={DirectReportsMobile}
             alt="direct reports list"
           />
           <source
-            media="(min-width: 470px)"
+            media="(min-width: 481px)"
             srcSet={DirectReports}
             alt="direct reports list"
           />
