@@ -22,13 +22,6 @@ body {
   font-size: 1rem;
 }
 
-// @font-face {
-//   font-family: "Circular std";
-//   src: url("#{$fonts-path}/MyFont-Regular.eot");
-// font-weight: weight(bold);
-// font-weight: map-get($font-weights, bold);
-// }
-
 h1 {
   font-size: 2.8rem;
   font-weight: map-get($font-weights, "heavy");
@@ -74,7 +67,7 @@ button {
   width: 100%;
 }
 
-@media (max-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .hero,
   .human-resource > .boxes,
   .admin-logistics > .box-layout,
