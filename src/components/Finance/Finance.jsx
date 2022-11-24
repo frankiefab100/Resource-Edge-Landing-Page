@@ -4,19 +4,19 @@ import Pay from "/icons/pay.png";
 import Payroll from "/images/Payroll.jpg";
 import PayrollMobile from "/images/mobile-Payroll.jpg";
 import Box from "../Box/Box";
+import Frame from "../Frame/Frame";
+import HeaderSection from "../HeaderSection/HeaderSection";
 import "../../styles/css/Finance.css";
 
 const Finance = () => {
   return (
     <section className="finance">
       <div className="box-layout">
-        <div className="heading">
-          <h2 className="title">Finance</h2>
-          <p className="details">
-            Generate invoices, track expenditure, and manage complex payrolls
-            for multiple teams and companies
-          </p>
-        </div>
+        <HeaderSection
+          header="Finance"
+          text="  Generate invoices, track expenditure, and manage complex payrolls
+        for multiple teams and companies"
+        />
 
         <Box
           iconId="icon6"
@@ -34,21 +34,12 @@ const Finance = () => {
         />
       </div>
 
-      <div className="frame">
-        <picture>
-          <source
-            media="(max-width: 480px)"
-            srcSet={PayrollMobile}
-            alt="payroll image"
-          />
-          <source
-            media="(min-width: 481px)"
-            srcSet={Payroll}
-            alt="payroll image"
-          />
-          <img src={Payroll} alt="payroll image" />
-        </picture>
-      </div>
+      <Frame
+        mobile={PayrollMobile}
+        desktop={Payroll}
+        fallback={Payroll}
+        altText="payroll"
+      />
     </section>
   );
 };

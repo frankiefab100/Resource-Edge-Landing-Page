@@ -5,18 +5,18 @@ import Calendar from "/icons/calendar.png";
 import EmployeeDirectory from "/images/Employee-directory.png";
 import EmployeeDirectoryMobile from "/images/mobile-Employee.png";
 import Box from "../Box/Box";
+import Frame from "../Frame/Frame";
+import HeaderSection from "../HeaderSection/HeaderSection";
 import "../../styles/css/HumanResource.css";
 
 const HumanResource = () => {
   return (
     <section className="human-resource">
-      <div className="heading">
-        <h2 className="title">Human Resources</h2>
-        <p className="text">
-          Onboard new employees, manage the employee lifecycle <br />
-          and measure employee performance.
-        </p>
-      </div>
+      <HeaderSection
+        header="Human Resources"
+        text="Onboard new employees, manage the employee lifecycle
+        and measure employee performance."
+      />
 
       <div className="boxes">
         <Box
@@ -46,21 +46,12 @@ const HumanResource = () => {
         />
       </div>
 
-      <div className="frame">
-        <picture>
-          <source
-            media="(max-width: 480px)"
-            srcSet={EmployeeDirectoryMobile}
-            alt="Employee directory"
-          />
-          <source
-            media="(min-width: 481px)"
-            srcSet={EmployeeDirectory}
-            alt="Employee directory"
-          />
-          <img src={EmployeeDirectory} alt="Employee directory" />
-        </picture>
-      </div>
+      <Frame
+        mobile={EmployeeDirectoryMobile}
+        desktop={EmployeeDirectory}
+        fallback={EmployeeDirectory}
+        altText="Employee directory"
+      />
     </section>
   );
 };

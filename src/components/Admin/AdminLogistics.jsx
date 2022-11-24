@@ -4,19 +4,19 @@ import Briefcase from "/icons/briefcase.png";
 import DirectReports from "/images/Travel-Direct-Reports.png";
 import DirectReportsMobile from "/images/mobile-Travel.png";
 import Box from "../Box/Box";
+import Frame from "../Frame/Frame";
+import HeaderSection from "../HeaderSection/HeaderSection";
 import "../../styles/css/AdminLogistics.css";
 
 const AdminLogistics = () => {
   return (
     <section className="admin-logistics">
       <div className="box-layout">
-        <div className="heading">
-          <h2 className="title">Admin & Logistics</h2>
-          <p className="details">
-            Manage and track company assets as well as logistics for travelling
-            employees
-          </p>
-        </div>
+        <HeaderSection
+          header="Admin & Logistics"
+          text="Manage and track company assets as well as logistics for travelling
+          employees."
+        />
 
         <Box
           iconId="icon4"
@@ -34,21 +34,12 @@ const AdminLogistics = () => {
         />
       </div>
 
-      <div className="frame">
-        <picture>
-          <source
-            media="(max-width: 480px)"
-            srcSet={DirectReportsMobile}
-            alt="direct reports list"
-          />
-          <source
-            media="(min-width: 481px)"
-            srcSet={DirectReports}
-            alt="direct reports list"
-          />
-          <img src={DirectReports} alt="direct reports list" />
-        </picture>
-      </div>
+      <Frame
+        mobile={DirectReportsMobile}
+        desktop={DirectReports}
+        fallback={DirectReports}
+        altText="direct reports list"
+      />
     </section>
   );
 };
