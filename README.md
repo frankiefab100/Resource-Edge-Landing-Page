@@ -8,9 +8,12 @@
 <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
 </p>
 
+![cover](https://user-images.githubusercontent.com/46662771/203580255-d63a50d2-777f-4dc8-92db-d7cf76a46c17.png)
+
+
 ## **Project Overview** ✨
 Resource Edge is a Human resource and Logistics management landing page.
-A task to translate a UI/UX design template into a frontend application using React library.
+An assigned task to translate a UI/UX design template into a frontend application using React library.
 
 [Figma Design](https://www.figma.com/file/aZBjlwJ8fAiUTCJnss6kpS/Learnable-21'-STest)
 
