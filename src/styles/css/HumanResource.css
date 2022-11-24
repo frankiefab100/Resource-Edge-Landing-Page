@@ -138,12 +138,12 @@ button:hover {
   text-align: center;
   width: 40px;
 }
-.human-resource .boxes .box .icon.icon1 {
+.human-resource .boxes .box .icon#icon1 {
   background-color: #5243aa;
 }
-.human-resource .boxes .box .icon.icon2 {
+.human-resource .boxes .box .icon#icon2 {
   background-color: #008da6;
 }
-.human-resource .boxes .box .icon.icon3 {
+.human-resource .boxes .box .icon#icon3 {
   background-color: #42526e;
 }

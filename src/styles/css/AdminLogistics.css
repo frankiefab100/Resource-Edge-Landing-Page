@@ -134,9 +134,9 @@ button:hover {
   text-align: center;
   width: 40px;
 }
-.admin-logistics .box-layout .box .icon.icon1 {
+.admin-logistics .box-layout .box .icon#icon4 {
   background-color: #ff8b00;
 }
-.admin-logistics .box-layout .box .icon.icon2 {
+.admin-logistics .box-layout .box .icon#icon5 {
   background-color: #008da6;
 }

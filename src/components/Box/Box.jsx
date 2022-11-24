@@ -1,17 +1,13 @@
 import React from "react";
-// import "./Box.scss";
 
-const Box = () => {
+const Box = ({ icon, iconId, heading, body }) => {
   return (
     <div className="box">
-      <div className="icon">
-        <img src="" alt="icon image" />
+      <div className="icon" id={iconId}>
+        <img src={icon} alt="icon image" />
       </div>
-      <h4 className="title">Asset Management</h4>
-      <p className="details">
-        Manage the acquisition, assignment, and disposition of assets
-        seamlessly.
-      </p>
+      <h4 className="title">{heading}</h4>
+      <p className="details">{body}</p>
     </div>
   );
 };

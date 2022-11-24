@@ -23,7 +23,7 @@ A task to translate a UI/UX design template into a frontend application using Re
 
 ## **Getting Started** 💻
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Vite](https://vitejs.dev).
 
 ### **Prerequisites**
 

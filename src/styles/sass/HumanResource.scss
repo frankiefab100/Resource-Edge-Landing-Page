@@ -30,13 +30,13 @@
         text-align: center;
         width: 40px;
 
-        &.icon1 {
+        &#icon1 {
           background-color: $circle-1;
         }
-        &.icon2 {
+        &#icon2 {
           background-color: $circle-2;
         }
-        &.icon3 {
+        &#icon3 {
           background-color: $circle-3;
         }
       }

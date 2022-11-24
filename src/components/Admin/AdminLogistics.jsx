@@ -3,6 +3,7 @@ import Sent from "/icons/sent 1.png";
 import Briefcase from "/icons/briefcase.png";
 import DirectReports from "/images/Travel-Direct-Reports.png";
 import DirectReportsMobile from "/images/mobile-Travel.png";
+import Box from "../Box/Box";
 import "../../styles/css/AdminLogistics.css";
 
 const AdminLogistics = () => {
@@ -17,26 +18,20 @@ const AdminLogistics = () => {
           </p>
         </div>
 
-        <div className="box">
-          <div className="icon icon1">
-            <img src={Sent} alt="sent icon" />
-          </div>
-          <h3 className="title">Travel & Logistics</h3>
-          <p className="details">
-            Make travel requests, get approvals, and have access to travel
-            information.
-          </p>
-        </div>
-        <div className="box">
-          <div className="icon icon2">
-            <img src={Briefcase} alt="briefcase icon" />
-          </div>
-          <h3 className="title">Asset Management</h3>
-          <p className="details">
-            Manage the acquisition, assignment, and disposition of assets
-            seamlessly.
-          </p>
-        </div>
+        <Box
+          iconId="icon4"
+          icon={Sent}
+          heading="Travel & Logistics"
+          body="Make travel requests, get approvals, and have access to travel
+          information."
+        />
+        <Box
+          iconId="icon5"
+          icon={Briefcase}
+          heading="Asset Management"
+          body="Manage the acquisition, assignment, and disposition of assets
+          seamlessly."
+        />
       </div>
 
       <div className="frame">

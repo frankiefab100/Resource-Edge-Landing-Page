@@ -4,6 +4,7 @@ import Goal from "/icons/goal.png";
 import Calendar from "/icons/calendar.png";
 import EmployeeDirectory from "/images/Employee-directory.png";
 import EmployeeDirectoryMobile from "/images/mobile-Employee.png";
+import Box from "../Box/Box";
 import "../../styles/css/HumanResource.css";
 
 const HumanResource = () => {
@@ -18,38 +19,31 @@ const HumanResource = () => {
       </div>
 
       <div className="boxes">
-        <div className="box">
-          <div className="icon icon1">
-            <img src={Team} alt="team icon" />
-          </div>
-          <h3 className="title">Employee Management</h3>
-          <p className="details">
-            From Hiring & Onboarding to Retiring, the Resource Edge Employee
-            Management module eliminates all the complexities & paperwork
-            involved in managing your team.
-          </p>
-        </div>
-        <div className="box">
-          <div className="icon  icon2">
-            <img src={Goal} alt="goal icon" />
-          </div>
-          <h3 className="title">Performance Management</h3>
-          <p className="details">
-            Manage and track employee performance with our easy-to-use tools for
-            goal setting, performance agreements and performance reviews.
-          </p>
-        </div>
-        <div className="box">
-          <div className="icon  icon3">
-            <img src={Calendar} alt="calendar icon" />
-          </div>
-          <h3 className="title">Paid Time Off</h3>
-          <p className="details">
-            Employees can request for paid time off, vacations, sick leaves or
-            educational leaves and get approvals all within Resource Edge. HR
-            managers can equally ensure compliance.
-          </p>
-        </div>
+        <Box
+          iconId="icon1"
+          icon={Team}
+          heading="Employee Management"
+          body="From Hiring & Onboarding to Retiring, the Resource Edge Employee
+          Management module eliminates all the complexities & paperwork
+          involved in managing your team."
+        />
+        <Box
+          iconId="icon2"
+          icon={Goal}
+          heading="Performance Management"
+          body="
+          Manage and track employee performance with our easy-to-use tools for
+          goal setting, performance agreements and performance reviews."
+        />
+        <Box
+          iconId="icon3"
+          icon={Calendar}
+          heading="Paid Time Off"
+          body="
+          Employees can request for paid time off, vacations, sick leaves or
+          educational leaves and get approvals all within Resource Edge. HR
+          managers can equally ensure compliance."
+        />
       </div>
 
       <div className="frame">

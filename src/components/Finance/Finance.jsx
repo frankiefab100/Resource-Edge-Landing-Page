@@ -3,6 +3,7 @@ import Tasklist from "/icons/task list.png";
 import Pay from "/icons/pay.png";
 import Payroll from "/images/Payroll.jpg";
 import PayrollMobile from "/images/mobile-Payroll.jpg";
+import Box from "../Box/Box";
 import "../../styles/css/Finance.css";
 
 const Finance = () => {
@@ -17,26 +18,20 @@ const Finance = () => {
           </p>
         </div>
 
-        <div className="box">
-          <div className="icon icon1">
-            <img src={Tasklist} alt="tasklist icon" />
-          </div>
-          <h3 className="title">RE Vouchers</h3>
-          <p className="details">
-            Track and manage expenditure for multiple teams across your
-            organisation using Resource Edge Vouchers
-          </p>
-        </div>
-        <div className="box">
-          <div className="icon icon2">
-            <img src={Pay} alt="pay icon" />
-          </div>
-          <h3 className="title">Payroll</h3>
-          <p className="details">
-            Our easy to use systems takes away the pain of managing complex
-            payrolls for organisations of all sizes.
-          </p>
-        </div>
+        <Box
+          iconId="icon6"
+          icon={Tasklist}
+          heading="RE Vouchers"
+          body="Track and manage expenditure for multiple teams across your
+          organisation using Resource Edge Vouchers."
+        />
+        <Box
+          iconId="icon7"
+          icon={Pay}
+          heading="Payroll"
+          body="  Our easy to use systems takes away the pain of managing complex
+          payrolls for organisations of all sizes."
+        />
       </div>
 
       <div className="frame">

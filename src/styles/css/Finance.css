@@ -134,9 +134,9 @@ button:hover {
   text-align: center;
   width: 40px;
 }
-.finance .box-layout .box .icon.icon1 {
+.finance .box-layout .box .icon#icon6 {
   background-color: #0052cc;
 }
-.finance .box-layout .box .icon.icon2 {
+.finance .box-layout .box .icon#icon7 {
   background-color: #008da6;
 }
