@@ -13,7 +13,7 @@
 
 ## **Project Overview** ✨
 Resource Edge is a Human resource and Logistics management landing page.
-A task to translate a UI/UX design template into a frontend application using React library.
+An assigned task to translate a UI/UX design template into a frontend application using React library.
 
 [Figma Design](https://www.figma.com/file/aZBjlwJ8fAiUTCJnss6kpS/Learnable-21'-STest)
 
@@ -26,7 +26,7 @@ A task to translate a UI/UX design template into a frontend application using Re
 
 ## **Getting Started** 💻
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Vite](https://vitejs.dev).
 
 ### **Prerequisites**
 
