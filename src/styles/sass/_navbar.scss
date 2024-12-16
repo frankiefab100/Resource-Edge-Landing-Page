@@ -4,7 +4,8 @@
 .nav {
   position: fixed;
   background-color: $bg-primary;
-  @include flexBox(space-between);
+  @include flex-center;
+  justify-content: space-between;
   top: 0;
   padding: 0.5rem 60px;
   width: 100%;
@@ -12,7 +13,7 @@
   z-index: 99;
 
   .logo-wrapper {
-    @include flexBox;
+    @include flex-center;
     
     img {
       height: 35px;
@@ -20,9 +21,22 @@
     }
   }
 
+  .hamburger-icon {
+    display: none;
+    cursor: pointer;
+    
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   .nav-links {
-    @include flexBox(flex-end);
+    @include flex-center;
+    justify-content: flex-end;
     flex: 1;
+    margin: 0;
+    padding: 0;
 
     li {
       list-style: none;
@@ -31,7 +45,6 @@
       a {
         color: $dark-blue;
         font-weight: map-get($font-weights, "medium");
-        font-family: $font-stack;
         
         &:hover {
           color: $blue;
@@ -41,7 +54,7 @@
   }
 
   .user-auth {
-    @include flexBox;
+    @include flex-center;
     margin-left: 30px;
 
     .sign-up {
@@ -55,31 +68,24 @@
     }
 
     .sign-in {
-      @include buttonStyle;
-      width: auto;
-      margin-right: 0;
-      padding: 0 16px;
+      background-color: $blue;
+      color: $white;
+      padding: 8px 16px;
+      border-radius: 4px;
       font-weight: map-get($font-weights, "medium");
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: darken($blue, 10%);
+      }
     }
   }
 
-  .hamburger-icon {
-    display: none;
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 468px) {
+  @include mobile {
     padding: 0 30px;
 
     .hamburger-icon {
       display: block;
-      @include flexBox;
-      
-      svg {
-        width: 24px;
-        height: 24px;
-        color: $dark-blue;
-      }
     }
 
     .nav-links {
@@ -92,7 +98,9 @@
       left: 0;
       right: 0;
       background-color: $bg-primary;
-      @include flexBox(flex-start, flex-start, column);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       padding: 20px 30px;
       box-shadow: 0 2px 4px rgba($black, 0.1);
 
@@ -103,14 +111,14 @@
         a {
           display: block;
           width: 100%;
-          font-weight: map-get($font-weights, "medium");
         }
       }
 
       .user-auth {
         width: 100%;
         margin: 20px 0 0;
-        @include flexBox(center, stretch, column);
+        flex-direction: column;
+        align-items: stretch;
 
         .sign-up {
           width: 100%;
@@ -118,7 +126,7 @@
           padding: 8px 0;
           text-align: center;
           background-color: $bg-secondary;
-          border-radius: 5px;
+          border-radius: 4px;
         }
 
         .sign-in {
@@ -128,13 +136,9 @@
         }
       }
     }
-
-    &.menu-hidden .mobile-nav {
-      display: none;
-    }
   }
 
-  @media screen and (max-width: 768px) {
+  @include tablet {
     .nav-links li {
       padding: 0 10px;
     }
@@ -143,4 +147,8 @@
       margin-left: 15px;
     }
   }
+}
+
+body.hidden {
+  overflow: hidden;
 }
