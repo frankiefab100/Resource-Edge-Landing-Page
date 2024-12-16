@@ -3,7 +3,7 @@ import Hamburger from "/icons/Hamburger-menu.svg";
 import Close from "/icons/Close icon.svg";
 import Logo from "/logo/Logo-coloured.png";
 import LogoMobile from "/logo/Logo-mobile.png";
-import "../../styles/css/NavBar.css";
+import "../styles/scss/components/_navbar.scss";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -42,7 +42,7 @@ const NavBar = () => {
           <a href="signup" className="sign-up">
             Sign Up
           </a>
-          <a id="nav-btn" href="signin" className="sign-in">
+          <a href="signin" className="sign-in">
             Sign In
           </a>
         </div>
