@@ -72,23 +72,27 @@ button:hover {
 }
 
 @media screen and (max-width: 468px) {
+  .hero {
+    padding: 80px 100px 40px;
+  }
+
   .hero,
-.human-resource > .boxes,
-.admin-logistics > .box-layout,
-.finance > .box-layout {
+  .human-resource > .boxes,
+  .admin-logistics > .box-layout,
+  .finance > .box-layout {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   .hero,
-.human-resource,
-.admin-logistics,
-.finance,
-.footer {
-    padding-left: 30px;
-    padding-right: 30px;
+  .human-resource,
+  .admin-logistics,
+  .finance,
+  .footer {
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .featured-brands > .logo,
-.footer {
+  .footer {
     flex-direction: column;
     justify-content: center;
   }

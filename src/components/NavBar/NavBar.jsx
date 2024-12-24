@@ -32,19 +32,25 @@ const NavBar = () => {
       </div>
 
       <ul className={`${showMenu ? "mobile-nav" : "nav-links"}`}>
-        <li onClick={handleMenu}>
-          <a href="features">Features</a>
-        </li>
-        <li onClick={handleMenu}>
-          <a href="about">About</a>
-        </li>
+        <div className="page-links">
+          <li onClick={handleMenu}>
+            <a href="features">Features</a>
+          </li>
+          <li onClick={handleMenu}>
+            <a href="about">About</a>
+          </li>
+        </div>
         <div className="user-auth">
-          <a href="signup" className="sign-up">
-            Sign Up
-          </a>
-          <a id="nav-btn" href="signin" className="sign-in">
-            Sign In
-          </a>
+          <li>
+            <a id="signup-btn" href="signup" className="sign-up">
+              Sign Up
+            </a>
+          </li>
+          <li>
+            <a id="signin-btn" href="signin" className="sign-in">
+              Sign In
+            </a>
+          </li>
         </div>
       </ul>
     </nav>
