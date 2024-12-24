@@ -112,7 +112,7 @@ button:hover {
 .finance {
   display: flex;
   flex-direction: column;
-  padding: 15px 60px;
+  padding: 15px 100px;
 }
 .finance h2 {
   margin-bottom: 10px;
