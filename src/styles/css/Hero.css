@@ -3,8 +3,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  /* padding: 80px 100px 40px; */
-  padding: 220px 100px;
+  padding: 80px 60px 40px;
 }
 .hero .hero-left p {
   font-size: 1.2rem;

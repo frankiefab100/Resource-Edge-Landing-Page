@@ -1,8 +1,120 @@
+#root,
+html,
+body,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: "Circular std", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p,
+li {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: #0052cc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 80px;
+  height: 40px;
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #5e6c84;
+}
+
+.frame img {
+  padding: 30px 0;
+  width: 100%;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .hero,
+  .human-resource > .boxes,
+  .admin-logistics > .box-layout,
+  .finance > .box-layout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero,
+  .human-resource,
+  .admin-logistics,
+  .finance,
+  .footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .featured-brands > .logo,
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav .nav-links {
+    margin-left: -20px;
+  }
+  .nav .nav-links li {
+    padding: 0 5px;
+  }
+  .user-auth {
+    right: 160px;
+  }
+  .featured-brands .logo img {
+    padding-right: 20px;
+    width: 100px;
+  }
+}
 .featured-brands {
   margin: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .featured-brands .logo {
   display: flex;
